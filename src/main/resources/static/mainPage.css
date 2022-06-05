@@ -1,0 +1,104 @@
+p {
+    font-style: italic;
+    color: white;
+}
+
+h1 {
+     text-align: center;
+    color: white;
+}
+
+label {
+    text-align: center;
+    color: white;
+}
+form{
+    width: 50%;
+    margin-left : 25%
+}
+
+.buttons {
+    width: 300px;
+    margin: 0 auto;
+    display: inline;
+}
+
+.action_btn {
+    width: 300px;
+    margin: 0 auto;
+    display: inline;
+}
+
+.cancel{
+    right: 10px;
+    position: absolute;
+}
+
+.submit{
+    left:10px;
+    position: absolute;
+}
+
+.side{
+    display:left;
+}
+
+.mybtn-left{
+    margin-left: 2vw;
+}
+
+.mybtn-right{
+    margin-right: 2vw;
+	text-align: right;
+	position: relative;
+}
+
+
+body {
+    background-color: #171917;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+.sub-title{
+    color: white;
+    text-align: center;
+}
+img {
+    height: 100vh;
+    width: auto;
+}
+
+.carousel {
+    height: 90vh;
+    background-color: #171917;
+}
+
+.carousel-inner img {
+    height: 90vh;
+    object-fit: contain;
+    background-color: #171917;
+}
+
+.form-group{
+padding: 10px;
+}
+
+.add{
+    background-color: white;
+}
+
+.carousel-caption{
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
+position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px; /* Need a specific value to work */
+}
