@@ -2,7 +2,6 @@ package com.example.demo;
 
 import com.example.demo.Artwork.Artwork;
 import com.example.demo.Artwork.ArtworkService;
-import com.vaadin.flow.component.dependency.JavaScript;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +9,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-@JavaScript("src/main/resources/static/mainPage.js")
 public class appController {
 
     private final ArtworkService artworkService;
