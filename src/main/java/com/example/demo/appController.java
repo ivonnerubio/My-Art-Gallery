@@ -21,12 +21,12 @@ public class appController {
     }
 
 
-//    @GetMapping
-//    public String greetingForm(Model model) {
-//        model.addAttribute("greeting", new form());
-//        model.addAttribute("artworks", artworkService.getArtworks());
-//        return "mainPage";
-//    }
+    @GetMapping
+    public String greetingForm(Model model) {
+        model.addAttribute("greeting", new form());
+        model.addAttribute("artworks", artworkService.getArtworks());
+        return "mainPage";
+    }
 
     @PostMapping
     public String greetingSubmit(@ModelAttribute form form, Model model) {
