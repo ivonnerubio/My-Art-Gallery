@@ -16,10 +16,10 @@ public class ArtworkController {
         this.artworkService = artworkService;
     }
 
-    @GetMapping("")
-    public List<Artwork> getArtworks(){
-        return artworkService.getArtworks();
-    }
+//    @GetMapping("")
+//    public List<Artwork> getArtworks(){
+//        return artworkService.getArtworks();
+//    }
 
     @PostMapping("")
     public void registerNewArtwork(@RequestParam Artwork artwork){
