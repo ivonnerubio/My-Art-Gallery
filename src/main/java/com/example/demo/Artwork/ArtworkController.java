@@ -16,12 +16,12 @@ public class ArtworkController {
         this.artworkService = artworkService;
     }
 
-    @GetMapping
+    @GetMapping("")
     public List<Artwork> getArtworks(){
         return artworkService.getArtworks();
     }
 
-    @PostMapping()
+    @PostMapping("")
     public void registerNewArtwork(@RequestParam Artwork artwork){
         artworkService.addNewArtwork(artwork);
     }
