@@ -16,45 +16,44 @@
 
         <div class="action_btn">
 
-            <a href="#AddArtwork"><button name="submit" class="btn btn-dark submit" type="submit" value="addArt" onclick="myFunction()">Add Artwork</button></a>
-            <a href="#ViewDatabase"><button name="submit" class="btn btn-dark cancel" type="submit" value="viewDatabase" onclick="myFunction2()">View Database</button></a>
+            <a href="#ViewDatabase"><button name="submit" class="btn btn-dark submit" type="submit" value="viewDatabase" onclick="myFunction2()">View Database</button></a>
+            <a href="#AddArtwork"><button name="submit" class="btn btn-dark cancel" type="submit" value="addArt" onclick="myFunction()">Add Artwork</button></a>
 
         </div>
 
     </div>
 
-    <br><br><br>
 
-
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXJ0JTIwZ2FsbGVyeXxlbnwwfHwwfHw%3D&w=1000&q=80"
-                     class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Welcome to the Art Gallery</h5>
-                    <p>You can begin by clicking on the arrows to view the pieces</p>
+    <div class = "carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1564399580075-5dfe19c205f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXJ0JTIwZ2FsbGVyeXxlbnwwfHwwfHw%3D&w=1000&q=80"
+                         class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h5>Welcome to the Art Gallery</h5>
+                        <p>You can begin by clicking on the arrows to view the pieces</p>
+                    </div>
+                </div>
+                <div th:each="artwork: ${artworks}" class="carousel-item">
+                    <img th:src="@{${artwork.image}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h5 th:text="${artwork.name}"/>
+                        <p th:text="${artwork.artist}"/>
+                        <p th:text="${artwork.date}"/>
+                    </div>
                 </div>
             </div>
-            <div th:each="artwork: ${artworks}" class="carousel-item">
-                <img th:src="@{${artwork.image}}" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 th:text="${artwork.name}"/>
-                    <p th:text="${artwork.artist}"/>
-                    <p th:text="${artwork.date}"/>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
-
 
 
 
@@ -110,7 +109,7 @@
                 <input type="text" th:field="*{url}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
 
-            <p class="buttons_sub"><input type="submit" class="btn btn-dark" value="Submit" /> <input type="reset" class="btn btn-dark" value="Reset" /></p>
+            <p class="buttons_sub"><input type="submit" class="btn btn-dark" value="Submit"/> <input type="reset" class="btn btn-dark" value="Reset" /></p>
 
         </form>
     </div>

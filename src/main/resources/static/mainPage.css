@@ -1,3 +1,9 @@
+.title{
+    margin-top: 10vw;
+}
+.carousel{
+    margin-top: 10vw;
+}
 p {
     font-style: italic;
     color: white;
@@ -101,4 +107,47 @@ position: absolute;
   margin-left: auto;
   margin-right: auto;
   width: 400px; /* Need a specific value to work */
+}
+
+
+@media screen and (max-width: 481px) {
+    .title{
+        margin-top: 7vw;
+        margin-bottom: 5vw;
+    }
+
+    .carousel{
+        margin-top: 20vw;
+        margin-bottom: 15vw;
+        height: 70vh;
+    }
+
+    .carousel-inner img {
+        height: 70vh;
+        object-fit: contain;
+        background-color: #171917;
+    }
+    .carousel-caption{
+        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100vw; /* Need a specific value to work */
+
+    }
+
+    .table{
+        margin-left: 5px;
+        width: 97.5vw;
+        margin-bottom: 25vw;
+    }
+
+    .addArtwork {
+        width: 100vw;
+    }
+    form{
+        margin-left: 5px;
+        width: 97.5vw;
+    }
 }
