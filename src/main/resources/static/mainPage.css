@@ -109,6 +109,11 @@ position: absolute;
   width: 400px; /* Need a specific value to work */
 }
 
+.addArtworkDiv{
+    position: absolute;
+    text-align: center;
+    margin-left: 200px;
+}
 
 @media screen and (max-width: 481px) {
     .title{

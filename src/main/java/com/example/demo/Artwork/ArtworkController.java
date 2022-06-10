@@ -22,7 +22,7 @@ public class ArtworkController {
     }
 
     @PostMapping
-    public void registerNewArtwork(@RequestParam Artwork artwork){
+    public void registerNewArtwork(@RequestBody Artwork artwork){
         artworkService.addNewArtwork(artwork);
     }
 
