@@ -18,7 +18,7 @@
 
         <div class="action_btn">
             <a href="#ViewDatabase"><button class="btn btn-dark left" type="submit" value="viewDatabase">View Database</button></a>
-            <button class="btn btn-dark right" type="button" data-toggle="modal" data-target="#addModal">Add Artwork</button>
+            <button id = "btnAddArtwork" class="btn btn-dark right" type="button" data-toggle="modal" data-target="#addModal">Add Artwork</button>
         </div>
 
     </div>
@@ -117,7 +117,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" onClick="changeStyle()" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" onClick="closeModal()" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary" onclick="addNewArtwork()">Add Artwork</button>
                 </div>
             </div>
