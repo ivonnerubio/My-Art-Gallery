@@ -14,7 +14,7 @@ const addNewArtwork = function(){
     }
     else{
         let xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost:8080/api/v1/artwork/");
+        xhr.open("POST", "https://shielded-sea-24932.herokuapp.com/api/v1/artwork/");
         xhr.setRequestHeader("Content-Type", "application/json");
 
         let data = `{
