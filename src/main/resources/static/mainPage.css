@@ -13,52 +13,27 @@ h1 {
      text-align: center;
     color: white;
 }
-
+.form-control{
+    margin-bottom: 10px;
+}
 label {
     text-align: center;
     color: white;
 }
-form{
-    width: 50%;
-    margin-left : 25%
-}
 
-.buttons {
-    width: 300px;
-    margin: 0 auto;
-    display: inline;
-}
-
-.action_btn {
-    width: 300px;
-    margin: 0 auto;
-    display: inline;
-}
-
-.cancel{
+.right{
     right: 10px;
     position: absolute;
 }
 
-.submit{
+.left{
     left:10px;
     position: absolute;
 }
 
 .side{
-    display:left;
+    display: left;
 }
-
-.mybtn-left{
-    margin-left: 2vw;
-}
-
-.mybtn-right{
-    margin-right: 2vw;
-	text-align: right;
-	position: relative;
-}
-
 
 body {
     background-color: #171917;
@@ -90,9 +65,9 @@ img {
     background-color: #171917;
 }
 
-.form-group{
-padding: 10px;
-}
+/*.form-group{*/
+/*padding: 10px;*/
+/*}*/
 
 .add{
     background-color: white;
@@ -110,9 +85,11 @@ position: absolute;
 }
 
 .addArtworkDiv{
-    position: absolute;
     text-align: center;
-    margin-left: 200px;
+}
+
+.modal-body label{
+    color: black;
 }
 
 @media screen and (max-width: 481px) {

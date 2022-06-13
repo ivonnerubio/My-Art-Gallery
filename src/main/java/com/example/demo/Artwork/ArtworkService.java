@@ -23,13 +23,29 @@ public class ArtworkService {
     }
 
     public void addNewArtwork(Artwork artwork) {
-        Optional<Artwork> artworkOptional = artworkRepository.findArtworkByName(artwork.getName());
+        Optional<Artwork> addedArtwork = artworkRepository.findArtworkByName(artwork.getName());
 
-        if(artworkOptional.isPresent()){
-            throw new IllegalStateException("Artwork already in database");
+        if(addedArtwork.isPresent()) {
+            throw new IllegalStateException("Artwork already in database.");
         }
-        artworkRepository.save(artwork);
-        System.out.println(artwork);
+        else if(artwork.getName().isEmpty()){
+            throw new IllegalStateException("Artwork name is missing. Please add the name of the artwork.");
+        }
+        else if(artwork.getArtist().isEmpty()){
+            throw new IllegalStateException("Artist name is missing. Please add the name of the artist.");
+        }
+        else if(artwork.getDate().equals(0)){
+            throw new IllegalStateException("Year of creation is missing. Please add the year of creation.");
+        }
+        else if(artwork.getImage().equals("")){
+            throw new IllegalStateException("Image URL is missing. Please add the image URL.");
+        }
+        else{
+            artworkRepository.save(artwork);
+            System.out.println("Artwork Added");
+
+        }
+
     }
 
     public void deleteArtwork(Long artworkId) {
