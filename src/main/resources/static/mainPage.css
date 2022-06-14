@@ -51,16 +51,15 @@ body {
 }
 
 .carousel {
-    height: 90vh;
-    /*background-color: #171917;*/
-    background-color: red;
+    height: 65vw;
+    background-color: #171917;
+
 }
 
 .carousel-inner img {
-    height: 90vw;
+    height: 65vw;
     object-fit: contain;
-    background-color: red;
-    /*background-color: #171917;*/
+    background-color: #171917;
 }
 
 .form-group{
