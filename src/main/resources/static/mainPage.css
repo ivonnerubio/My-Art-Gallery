@@ -2,7 +2,7 @@
     margin-top: 10vw;
 }
 .carousel{
-    margin-top: 10vw;
+    margin-top: 5vw;
 }
 p {
     font-style: italic;
@@ -51,14 +51,14 @@ body {
 }
 
 .carousel {
-    height: 90vw;
-    /*background-color: #171917;*/
-    background-color: red;
+    height: 40vw;
+    background-color: #171917;
+    /*background-color: red;*/
 
 }
 
 .carousel-inner img {
-    height: 65vw;
+    height: 40vw;
     object-fit: contain;
     background-color: #171917;
 }
@@ -97,24 +97,33 @@ padding: 10px;
     }
 
     .carousel{
-        margin-top: 20vw;
+        margin-top: 17vw;
         margin-bottom: 15vw;
-        height: 70vh;
+        height: 40vh;
     }
 
     .carousel-inner img {
-        height: 70vh;
+        height: 40vh;
         object-fit: contain;
         background-color: #171917;
     }
+
+    .carousel-caption h5{
+        font-size: 4vw;
+    }
+
+    .carousel-caption p{
+        font-size: 3.5vw;
+    }
+
     .carousel-caption{
-        background-color: transparent;
         background-color: rgba(0, 0, 0, 0.3);
         position: absolute;
         left: 0;
+        bottom: 0;
         right: 0;
-        width: 100vw; /* Need a specific value to work */
-
+        width: 50vw; /* Need a specific value to work */
+        height: 30vw;
     }
 
     .table{
