@@ -66,8 +66,8 @@
             <th scope="col">Id</th>
             <th scope="col">Artwork Name</th>
             <th scope="col">Artist</th>
-            <th scope="col">Painted On</th>
-            <th scope="col">URL</th>
+            <th scope="col">Date</th>
+            <th scope="col">Image</th>
         </tr>
         </thead>
         <tbody>
@@ -77,7 +77,7 @@
             <td th:text="${artwork.name}">
             <td th:text="${artwork.artist}">
             <td th:text="${artwork.date}">
-            <td><a th:href="${artwork.image}" target="_blank">View Image</a></td>
+            <td><a th:href="${artwork.image}" target="_blank">View</a></td>
 
         </tr>
         </tbody>

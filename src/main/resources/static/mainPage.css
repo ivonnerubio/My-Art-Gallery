@@ -131,11 +131,15 @@ padding: 10px;
         margin-bottom: 25vw;
     }
 
+    .table tr{
+        font-size:12px;
+        text-align:center;
+    }
+
     .addArtwork {
         width: 100vw;
     }
-    form{
-        margin-left: 5px;
-        width: 97.5vw;
+    .button{
+        font-size: 10px;
     }
 }
